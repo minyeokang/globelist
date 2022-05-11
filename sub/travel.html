@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Globelist</title>
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../css/ani.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+    <!--js-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="modal">
+            <div class="modal_inner">
+                <input type="text" placeholder="도시, 국가, 키워드로 검색">
+                <button>x</button>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_inner">
+                <h3>Login</h3>
+                <button class="close_login">X</button>
+                <label for="input_id">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_id" type="text"> 
+                <br><br>
+                <label for="input_pw">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pw" type="password"><br>
+                <div class="login_btn"><a href="#">로그인</a></div>
+                <h4>아직 회원이 아니신가요?</h4>
+                <div class="join_btn"><a href="#">Join</a></div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="join_inner">
+                <h3>Join</h3>
+                <button class="close_login">X</button>
+                <label for="input_name">Name&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_name" type="text">
+                <br><br>
+                <label for="input_email">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_email" type="text">
+                <br><br>
+                <label for="input_pnumber">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pnumber" type="password" >
+                <input id="input_join" type="submit" value="회원가입">
+                
+            </div>
+        </div>
+        <header id="header" class="inner">
+            <h1><a href="../index.html">
+                    <img src="../images/common/main_logo.png" alt="Globelist">
+                </a></h1>
+            <div class="sch">
+                <p>Search</p>
+            </div>
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">여행지</a>
+                        <ul class="submenu">
+                            <li><a href="#">인기 여행지</a></li>
+                            <li><a href="#">인기 루트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="swiss.html">여행계획</a>
+                        <ul class="submenu">
+                            <li><a href="swiss.html">관광 정보</a></li>
+                            <li><a href="#">마이플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reserve.html">예약</a>
+                        <ul class="submenu">
+                            <li><a href="reserve.html">비행기</a></li>
+                            <li><a href="#">숙소</a></li>
+                            <li><a href="#">투어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">입국정보</a>
+                        <ul class="submenu">
+                            <li><a href="info.html">자가격리규정</a></li>
+                            <li><a href="#">여행가능지역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="board.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="board.html">커뮤니티</a></li>
+                            <li><a href="#">자주찾는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <!--header end-->
+
+        <section id="sb">
+            <h2><img src="../images/sub1/destination.jpg" alt="여행지"></h2>
+
+
+        </section>
+        <!--sb end-->
+        
+
+        <section id="container1">
+
+            <div class="inner clearfix">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="travel.html">여행지</a></li>
+                        <li><a href="travel.html">인기 여행지</a></li>
+                    </ul>
+                </div>
+                <!--breandcrumbs end-->
+
+                <div class="sec1 clearfix">
+                    <p class="sub_title">Popular destinations</p>
+                    <h3>인기 여행지</h3>
+                    <div class="box">
+                        <div class="popular">
+                            <div><a href="#"><img src="../images/sub1/turkey.png" alt="터키"></a></div>
+                            <p class="enjoy">
+                                유럽과 아시아의 문화의<br>
+                                조화를 간직하고 있는 터키에서<br>
+                                문화유산, 먹거리, 볼거리를<br>
+                                즐겨보세요.
+                            </p>
+                        </div>
+                        <div class="popular">
+                            <div><a href="#"><img src="../images/sub1/canyon.jpg" alt="캐년"></a></div>
+                            <p class="enjoy">
+                                죽기 전에 꼭 가봐야 할<br>
+                                여행지 1위 ! 그랜드 캐년에서<br>
+                                헬기투어 &amp; 지프니 투어로<br>
+                                더욱 더 알차게 관광해보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <!--box end-->
+                    <div class="box">
+                        <div class="popular">
+                            <div><a href="#"><img src="../images/sub1/newyork.jpg" alt="뉴욕"></a></div>
+                            <p class="enjoy">
+                                세계적으로 유명한<br>
+                                스카이라인을 지닌 뉴욕에서<br>
+                                뮤지컬, 랜드마크, 쇼핑, 박물관을<br>
+                                직접 경험해보세요.
+                            </p>
+                        </div>
+                        <div class="popular">
+                            <div><a href="swiss.html"><img src="../images/sub1/swiss.jpg" alt="스위스"></a></div>
+                            <p class="enjoy">
+                                꿈같은 자연을 자랑하는<br>
+                                스위스! 아름다운 설경의<br>
+                                알프스 산맥에서 기차를 타고<br>
+                                풍경을 감상해보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <!--box-->
+
+                    <a href="#" class="more">전체 여행지 보기</a>
+
+                </div>
+                <!--sec1 end-->
+                </div>
+        </section>
+
+        <section id="container2">
+
+            <div class="sec2 inner clearfix">
+                <p class="sub_title"> Recommendations</p>
+                <h3>추천 관광지</h3>
+                <ul class="continental">
+                    <li class="active"><a href="#">유럽</a></li>
+                    <li><a href="#">아시아</a></li>
+                    <li><a href="#">북미</a></li>
+                    <li><a href="#">남태평양</a></li>
+                    <li><a href="#">중남미</a></li>
+                </ul>
+                <ul class="country">
+                    <li class="active"><a href="#">프랑스</a></li>
+                    <li><a href="#">그리스</a></li>
+                    <li><a href="#">이탈리아</a></li>
+                    <li><a href="#">아이슬란드</a></li>
+                    <li><a href="#">크로아티아</a></li>
+                    <li><a href="#">바르셀로나</a></li>
+                </ul>
+                <div class="paris">
+                    <div class="paris1 ani_stop ani-start-flipX">
+                        <img src="../images/sub1/effel.jpg" alt="에펠탑">
+                    </div>
+                    <div class="paris2">
+                        <img src="../images/sub1/rouvre.jpg" alt="루브르" class="ruv">
+                        <img src="../images/sub1/montmart.jpg" alt="몽마르뜨">
+
+                    </div>
+                    <div>
+                        <img src="../images/sub1/arc.jpg" alt="개선문" class="ruv">
+                        <img src="../images/sub1/notredam.jpg" alt="노트르담">
+                    </div>
+                </div>
+                <!--paris end-->
+
+            </div>
+            <!--sec2 end-->
+
+    
+    </section>
+    <!--container2 end-->
+
+
+    <footer id="footer">
+        <div class="footer_line">
+            <div class="inner">
+                <ul class="company">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="inner">
+
+            <h3><img src="../images/common/footer_logo.png" alt="Globelist"></h3>
+
+            <address>부산시 부산진구 중앙대로 708 5층 503호<br>
+                사업자등록번호 : 0515-54820-5458
+            </address>
+            <p class="copy">&copy; COPYRIGHT GLOBELIST Corp. ALL RIGHTS RESERVED.</p>
+            <ul class="sns">
+                <li><a href="#"><img src="../images/common/sns_insta.png" alt="insta"></a></li>
+                <li><a href="#"><img src="../images/common/sns_chat.png" alt="kakaotalk"></a></li>
+                <li><a href="#"><img src="../images/common/sns_mail.png" alt="mail"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--footer end-->
+    <a href="#" id="gotop"><img src="../images/common/btn_gotop.png" alt="위로"></a>
+    </div>
+    <!--wrap end-->
+</body>
+
+</html>

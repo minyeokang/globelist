@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--og(open graph)-->
+    <meta property="og:site_name" content="Globelist">
+    <meta property="og:url" content="https://www.globelist.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="globelist">
+    <meta property="og:description" content="글로브리스트에서 나만의 특별한 여행을 계획해보세요.">
+    <meta property="og:image" content="images/og_image.jpg">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Globelist</title>
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../css/ani.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+    <!--js-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="modal">
+            <div class="modal_inner">
+                <input type="text" placeholder="도시, 국가, 키워드로 검색">
+                <button>x</button>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_inner">
+                <h3>Login</h3>
+                <button class="close_login">X</button>
+                <label for="input_id">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_id" type="text"> 
+                <br><br>
+                <label for="input_pw">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pw" type="password"><br>
+                <div class="login_btn"><a href="#">로그인</a></div>
+                <h4>아직 회원이 아니신가요?</h4>
+                <div class="join_btn"><a href="#">Join</a></div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="join_inner">
+                <h3>Join</h3>
+                <button class="close_login">X</button>
+                <label for="input_name">Name&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_name" type="text">
+                <br><br>
+                <label for="input_email">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_email" type="text">
+                <br><br>
+                <label for="input_pnumber">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pnumber" type="password" >
+                <input id="input_join" type="submit" value="회원가입">
+                
+            </div>
+        </div>
+        <header id="header" class="inner">
+            <h1><a href="../index.html">
+                    <img src="../images/common/main_logo.png" alt="Globelist">
+                </a></h1>
+            <div class="sch">
+                <p>Search</p>
+            </div>
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="travel.html">여행지</a>
+                        <ul class="submenu">
+                            <li><a href="travel.html">인기 여행지</a></li>
+                            <li><a href="#">인기 루트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="swiss.html">여행계획</a>
+                        <ul class="submenu">
+                            <li><a href="swiss.html">관광 정보</a></li>
+                            <li><a href="#">마이플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reserve.html">예약</a>
+                        <ul class="submenu">
+                            <li><a href="reserve.html">비행기</a></li>
+                            <li><a href="#">숙소</a></li>
+                            <li><a href="#">투어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">입국정보</a>
+                        <ul class="submenu">
+                            <li><a href="info.html">자가격리규정</a></li>
+                            <li><a href="#">여행가능지역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="board.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="board.html">커뮤니티</a></li>
+                            <li><a href="#">자주찾는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <!--header end-->
+
+        <section id="res_sb">
+            <img src="../images/sub2/board_sb.jpg" alt="고객센터">
+        </section>
+
+        <section class="breadcrumbs inner clearfix">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="board.html">고객센터</a></li>
+                <li><a href="board.html">커뮤니티</a></li>
+
+            </ul>
+        </section>
+
+        <section id="contents" class="inner">
+
+
+            <ul class="board_menu clearfix">
+                <li><a href="board.html">전체</a></li>
+                <li class="addon"><a href="board-2.html">일반</a></li>
+                <li><a href="board-1.html">서비스</a></li>
+            </ul>
+
+            <form class="board_form">
+                <fieldset>
+                    <legend></legend>
+                    <select value="구분">
+                        <option>전체</option>
+                        <option>일반</option>
+                        <option>서비스</option>
+                    </select>
+                    <input type="submit" value="검색"><input type="text" placeholder="검색어를 입력해주세요">
+                </fieldset>
+            </form>
+
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>구분</th>
+                    <th>제목</th>
+                    <th>등록일</th>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>일반</td>
+                    <td><a href="#">시스템 점검에 따른 이용제한 안내</a></td>
+                    <td>2022.02.17</td>
+                </tr>
+                <tr>
+                    <td>440</td>
+                    <td>일반</td>
+                    <td><a href="#"> 투어 시스템 점검에 따른 이용제한 안내</a></td>
+                    <td>2021.12.20</td>
+                </tr>
+                <tr>
+                    <td>439</td>
+                    <td>일반</td>
+                    <td><a href="#"> [공지] 오미크론 변이 관련 취소료 규정 변경 공지</a></td>
+                    <td>2021.12.16</td>
+                </tr>
+                
+                <tr>
+                    <td>437</td>
+                    <td>일반</td>
+                    <td><a href="#"> [공지] 오미크론 변이 관련 격리 조건 변경 공지</a></td>
+                    <td>2021.11.20</td>
+                </tr>
+                <tr>
+                    <td>436</td>
+                    <td>일반</td>
+                    <td><a href="#"> [해외항공] 대한민국 전자여행 허가제 (K-ETA) 시행</a></td>
+                    <td>2021.11.02</td>
+                </tr>
+                <tr>
+                    <td>433</td>
+                    <td>일반</td>
+                    <td><a href="#"> 코로나 관련 환불 규정 공지</a></td>
+                    <td>2021.09.20</td>
+                </tr>
+                <tr>
+                    <td>432</td>
+                    <td>일반</td>
+                    <td><a href="#"> 개인정보 처리방침 변경 안내</a></td>
+                    <td>2021.08.02</td>
+                </tr>
+                <tr class="last_tr">
+                    <td>431</td>
+                    <td>일반</td>
+                    <td><a href="#"> 오미크론 변이 관련 공지</a></td>
+                    <td>2021.07.08</td>
+                </tr>
+            </table>
+            <div class="pagebox">
+                <ul class="page">
+                    <li><a href="#">처음페이지</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">다음페이지</a></li>
+                </ul>
+            </div>
+
+
+        </section>
+
+
+        <footer id="footer">
+            <div class="footer_line">
+                <div class="inner">
+                    <ul class="company">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner">
+
+                <h3><img src="../images/common/footer_logo.png" alt="Globelist"></h3>
+
+                <address>부산시 부산진구 중앙대로 708 5층 503호<br>
+                    사업자등록번호 : 0515-54820-5458
+                </address>
+                <p class="copy">&copy; COPYRIGHT GLOBELIST Corp. ALL RIGHTS RESERVED.</p>
+                <ul class="sns">
+                    <li><a href="#"><img src="../images/common/sns_insta.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="../images/common/sns_chat.png" alt="kakaotalk"></a></li>
+                    <li><a href="#"><img src="../images/common/sns_mail.png" alt="mail"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!--footer end-->
+        <a href="#" id="gotop"><img src="../images/common/btn_gotop.png" alt="위로"></a>
+    </div>
+</body>
+
+</html>
