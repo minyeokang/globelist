@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Globelist</title>
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../css/ani.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+    <!--js-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="modal">
+            <div class="modal_inner">
+                <input type="text" placeholder="도시, 국가, 키워드로 검색">
+                <button>x</button>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_inner">
+                <h3>Login</h3>
+                <button class="close_login">X</button>
+                <label for="input_id">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_id" type="text"> 
+                <br><br>
+                <label for="input_pw">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pw" type="password"><br>
+                <div class="login_btn"><a href="#">로그인</a></div>
+                <h4>아직 회원이 아니신가요?</h4>
+                <div class="join_btn"><a href="#">Join</a></div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="join_inner">
+                <h3>Join</h3>
+                <button class="close_login">X</button>
+                <label for="input_name">Name&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_name" type="text">
+                <br><br>
+                <label for="input_email">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_email" type="text">
+                <br><br>
+                <label for="input_pnumber">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pnumber" type="password" >
+                <input id="input_join" type="submit" value="회원가입">
+                
+            </div>
+        </div>
+        <header id="header" class="inner">
+            <h1><a href="../index.html">
+                    <img src="../images/common/main_logo.png" alt="Globelist">
+                </a></h1>
+            <div class="sch"><p>Search</p></div>
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="travel.html">여행지</a>
+                        <ul class="submenu">
+                            <li><a href="travel.html">인기 여행지</a></li>
+                            <li><a href="#">인기 루트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="swiss.html">여행계획</a>
+                        <ul class="submenu">
+                            <li><a href="swiss.html">관광 정보</a></li>
+                            <li><a href="#">마이플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reserve.html">예약</a>
+                        <ul class="submenu">
+                            <li><a href="reserve.html">비행기</a></li>
+                            <li><a href="#">숙소</a></li>
+                            <li><a href="#">투어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">입국정보</a>
+                        <ul class="submenu">
+                            <li><a href="info.html">자가격리규정</a></li>
+                            <li><a href="#">여행가능지역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="board.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="board.html">커뮤니티</a></li>
+                            <li><a href="#">자주찾는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <!--header end-->
+
+        <section id="sb">
+            <h2><img src="../images/sub2/interlaken.jpg" alt="인터라켄"></h2>
+            
+           
+        </section>
+        <!--sb end-->
+        <section class="breadcrumbs inner clearfix">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="board.html">여행계획</a></li>
+                <li><a href="board.html">관광 정보</a></li>
+                <li><a href="board.html">스위스</a></li>
+                
+            </ul>
+        </section>
+          
+        <section id="container" class="inner clearfix">
+                
+                <div class="align">
+                <div class="imgtitle">
+                    <img src="../images/sub2/jungfrau2.jpg" alt="융프라우">
+                    <h2>Jungfraujoch</h2>
+                    <p>융프라우는 스위스 베른 알프스의 주요 고봉 중<br>
+                    하나로 해발 4,158m를 가진 봉우리이다.</p>
+                    <p>유럽의 지붕인 융프라우요흐에 오르는 것은<br>
+                        스위스 여행의 정점을 찍는 것을 의미한다.</p>
+                </div>
+
+                <div class="memory">
+                    <h2>잊지 못할 추억 만들기</h2>
+
+                    <div class="tip">
+                        <img src="../images/sub2/train.jpg" alt="열차">
+                        <dl class="ani_stop ani-start-fadeRight">
+                            <dt>Tip. 1</dt>
+                            <dd>융프라우로 가는<br>
+                                빨간 열차가 기다리는<br>
+                                마지막 환승지인 클라이네<br> 샤이텍에서는 웅장한 아이<br>
+                                거 북벽을 만날 수 있습니다.<br>
+                                이 기차를 타고 알프스 산맥<br>
+                                의 풍경을 감상해보세요.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="tip1">
+                        <img src="../images/sub2/lake.jpg" alt="호수">
+                        <dl class="ani_stop ani-start-fadeLeftReverse">
+                            <dt>Tip. 2</dt>
+                            <dd>알프스 산의 봉우리들과<br> 
+                                푸른 들판이 이어지는 그림<br>
+                                같은 풍경을 볼 수 있는 피르<br> 
+                                스트에서 멋진 호수를 볼 수<br> 
+                                있는 바흐알프 호수까지<br> 
+                                여유롭게 트래킹 해보세요.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="tip">
+                        <img src="../images/sub2/ski.jpg" alt="스키">
+                        <dl class="ani_stop ani-start-fadeRight">
+                            <dt>Tip. 3</dt>
+                            <dd>스키, 보드, 티롤리안,<br>
+                                눈썰매 등의 겨울 스포츠를<br>
+                                즐길 수 있습니다. 만년설<br>
+                                속에서 액티비티를 즐기며<br>
+                                잊지 못할 추억을 만들어<br>
+                                보세요.
+                            </dd>
+                        </dl>
+                    </div>
+
+                </div><!--memory end-->
+                
+                
+            </div><!--align end-->
+        </section>
+        <!--container end-->
+
+
+        <footer id="footer">
+            <div class="footer_line">
+                <div class="inner">
+                    <ul class="company">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner">
+            
+            <h3><img src="../images/common/footer_logo.png" alt="Globelist"></h3>
+            
+            <address>부산시 부산진구 중앙대로 708 5층 503호<br>
+            사업자등록번호 : 0515-54820-5458
+            </address>
+            <p class="copy">&copy; COPYRIGHT GLOBELIST Corp. ALL RIGHTS RESERVED.</p>
+            <ul class="sns">
+                <li><a href="#"><img src="../images/common/sns_insta.png" alt="insta"></a></li>
+                <li><a href="#"><img src="../images/common/sns_chat.png" alt="kakaotalk"></a></li>
+                <li><a href="#"><img src="../images/common/sns_mail.png" alt="mail"></a></li>
+            </ul>
+            </div>
+        </footer>
+        <!--footer end-->
+        <a href="#" id="gotop"><img src="../images/common/btn_gotop.png" alt="위로"></a>
+    </div><!--wrap end-->
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*login*/
+.login{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 999999;}
+.login .login_inner{background: #fff; width: 300px; height: 280px; position: absolute; right: 10%; top: 130px; padding: 25px; border: 1px solid #ddd;}
+.login .login_inner h3{position: relative; border-bottom: 1px solid #999; padding-bottom: 15px; margin-bottom: 15px;}
+.login .login_inner h4{border-top: 1px solid#999; padding-top: 15px; position: relative; font-weight: normal;}
+.login .login_inner .join_btn{position: absolute; right: 25px; bottom: 22px; }
+.login .login_inner .join_btn a{display: inline-block; color: #2291CD; font-weight: 600;}
+.login .login_inner .close_login{position: absolute; right: 25px; top: 22px; padding: 5px;  
+    border: 1px solid #999; 
+    width: 30px; height: 30px; 
+    cursor: pointer; background: url('../images/common/icon_close.png') no-repeat 8px 7px; font-size: 0; border-radius: 50%; color: #999; }
+.login #input_pw{width: 152px; height: 20px;}
+.login #input_id{width: 180px; height: 20px;}
+.login .login_btn{width: 250px; padding: 5px; margin: 15px 0;
+    background: #79BED9; outline: none; border: 0; } 
+.login .login_btn a{display: block; text-align: center; color: #fff; font-weight: 600; }
+
+/*join*/
+.join{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 999999; }
+.join .join_inner{background: #fff; width: 300px; height: 280px; position: absolute; right: 10%; top: 130px; padding: 25px; border: 1px solid #ddd;}
+.join .join_inner h3{position: relative; border-bottom: 1px solid #999; padding-bottom: 15px; margin-bottom: 15px;}
+.join .join_inner .close_login{position: absolute; right: 25px; top: 22px; padding: 5px;  
+    border: 1px solid #999; 
+    width: 30px; height: 30px; 
+    cursor: pointer; background: url('../images/common/icon_close.png') no-repeat 8px 7px; font-size: 0; border-radius: 50%; color: #999; }
+.join #input_pnumber{width: 152px; height: 20px;}
+.join #input_email{width: 180px; height: 20px;}
+.join #input_name{width: 180px; height: 20px;}
+
+.join #input_join{width: 250px; padding: 5px; margin: 15px 0;
+    background: #79BED9; outline: none; border: 0; color: #fff; font-weight: 600; font-size: 15px; cursor: pointer;} 
+
+
+/*modal*/
+.modal{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999999;}
+.modal .modal_inner{background: #fff; width: 1200px; height: 150px; position: absolute; left: 50%; top: 150px; transform: translateX(-50%); padding: 25px 120px; }
+
+.modal .modal_inner input{padding: 10px 0 10px 40px; 
+    width: 500px; height: 70px;
+    background: url('../images/common/icon_serch.png') no-repeat 10px 25px; font-size: 20px; 
+    outline: none; border: 0; border-bottom: 3px solid #999;}
+
+.modal .modal_inner button{padding: 5px;  
+    border: 1px solid #999; 
+    position: absolute; right: 50px; top: 50px;
+    width: 40px; height: 40px; 
+    cursor: pointer; background: url('../images/common/icon_close.png') no-repeat 12px 12px;
+     font-size: 0; border-radius: 50%; color: #999; font-family: 'Noto Sans KR';}
+
+/*header*/
+#header{height: 150px; position: relative; z-index: 99999;}
+#header h1{position: absolute; left: 0; top: 20px;}
+/*search*/
+#header .sch{position: absolute; right: 200px; top: 40px; padding: 2px 30px 2px 35px; background: #fff; border-radius: 50px; width: 175px; height: 25px; border: 1px solid #999; background: url('../images/common/icon_serch.png') no-repeat 10px center; text-align: left; cursor: pointer;}
+#header .sch p{color: #666; font-size: 13px;}
+/*util*/
+#header .util{position: absolute; right: 10px; top: 40px;}
+#header .util li{float: left;}
+#header .util li a{display: block; padding-left: 30px; color: #666; font-size: 15px;}
+/*nav*/
+#header nav{position: absolute; left: 50px; top: 105px; }
+#header .gnb{width: 1200px;}
+#header .gnb > li{float: left; width: calc((100% - 150px) / 5); display: inline-block;  text-align: center;}
+#header .gnb > li > a{ padding: 10px 20px; font-size: 20px; color: #3f3f3f; }
+#header .gnb > li:hover > a{ border-bottom: 2px solid #2291CD;}
+
+#header .nav_bg{background: #fff;  position: absolute; left: 0; top: 150px; width: 1200px; height: 146px; z-index: -1;}
+#header .gnb .submenu{ text-align: center; padding: 20px 0 0; }
+#header .gnb .submenu li a{font-size: 18px; display: inline-block; padding: 5px 0; color: #666;}
+#header .gnb .submenu li:hover a{color: #79BED9;}
+/*main banner*/
+#mb{height: 500px; }
+#mb .banner li{width: 1200px; height: 500px;}
+
+/*slick*/
+#mb .slick-arrow{font-size: 0; width: 30px; height: 30px; position: absolute; top: 50%;
+    transform: translateY(-50%); border: 0; background: none; z-index: 9999; cursor: pointer; }
+#mb .slick-prev{border: 3px solid #fff;
+border-left: 0; border-bottom: 0; transform: rotate(225deg); left: 300px;}
+#mb .slick-next{border: 3px solid #fff;
+border-left: 0; border-bottom: 0; transform: rotate(45deg); right: 300px;}
+
+#mb .slick-dots{position: absolute; left: 50%; bottom: 30px; cursor: pointer;}
+#mb .slick-dots li{background: url('../images/main/dots.png') no-repeat center center; display: inline-block; width: 30px; height: 20px; }
+#mb .slick-dots li button{font-size: 0; border: 0; padding-right: 30px; }
+#mb .slick-dots li.slick-active{background: url('../images/main/activedots.png') no-repeat center center;}
+
+/*planner*/
+#planner{background: #f2f2f2; padding: 55px 0; }
+#planner img{float: left; width: 570px; height: 300px;}
+#planner .plantxt{float: left; margin-left: 40px; width: calc(100% - 610px); height: 300px; position: relative;}
+#planner .plantxt h2{color: #2291CD; font-size: 40px; font-weight: 500;}
+#planner .plantxt p{color: #333; padding: 20px 0 40px;}
+#planner .plantxt .more{background: #79BED9;
+position: absolute; left: 0; top: 250px;
+display: inline-block; padding: 10px 40px; color: #Fff; border-radius: 50px;}
+#planner .plantxt .more:hover{background: #fff; color: #79BED9;}
+
+#planner .plantxt ul li:not(:last-child):after{content: ''; width: 14px; height: 3px; position: absolute; right: 20px; top: 10px; border-bottom: 3px dotted #ccc;}
+#planner .plantxt ul li{float: left; padding-right: 50px; color: #666;
+    padding-left: 30px; position: relative;}
+#planner .plantxt ul li:nth-child(1){background: url('../images/main/icon_1.png') no-repeat 0 top;}
+#planner .plantxt ul li:nth-child(2){background: url('../images/main/icon_2.png') no-repeat 0 top;}
+#planner .plantxt ul li:nth-child(3){background: url('../images/main/icon_3.png') no-repeat 0 top;}
+#planner .plantxt ul li:nth-child(4){background: url('../images/main/icon_4.png') no-repeat 0 top; }
+
+/*컨텐츠 부분 공통요소*/
+#contents{padding: 150px 0;}
+#contents p.sub_title{font-family: 'roboto'; font-size: 15px; font-weight: 600; color: #2291CD; text-align: center;}
+#contents h3{font-size: 40px; text-align: center; font-weight: 400; padding-bottom: 100px;}
+
+/*인기여행지*/  
+#contents #city .text{padding: 10px 0;}
+#contents #city h3{font-size: 20px; display: inline; padding-left: 35px; color: #333;}
+#contents #city p{font-size: 15px; z-index: 9999; padding-left: 10px; color: #666;}
+
+#contents #city .city_1 h3{background: url('../images/main/location.png') no-repeat 10px 6px;}
+#contents #city .city_2 h3{background: url('../images/main/location2.png') no-repeat 10px 6px;}
+#contents #city .city_3 h3{background: url('../images/main/location3.png') no-repeat 10px 6px;}
+
+#city .city_1, #city .city_2, #city .city_3{height: 270px;  width: 350px; float: left; border: 0.5px solid #e2e2e2; margin-right: 75px;}
+#city .city_3{margin-right: 0;}
+
+
+/*slick*/
+#contents #city .city_1 .slick-arrow, #contents .city_2 .slick-arrow, #contents .city_3 .slick-arrow{font-size: 0; height: 15px; width: 15px; border: 0; background: none; position: absolute; top: 50%; z-index: 9; cursor: pointer;}
+#contents #city .city_1 .slick-prev, #contents .city_2 .slick-prev, #contents .city_3 .slick-prev {left: 15px;
+    border: 2px solid #fff;
+    border-left: 0; border-bottom: 0; transform: rotate(225deg);}
+#contents #city .city_1 .slick-next, #contents .city_2 .slick-next, #contents .city_3 .slick-next{right: 15px;border: 2px solid #fff; border-left: 0; border-bottom: 0; transform: rotate(45deg);}
+
+/*서비스*/
+#service{padding: 150px 0; }
+#service ul li {float: left; ; text-align: center; width: calc(100% / 4);}
+#service ul li a{display: block; padding: 150px 0 0;}
+#service ul li:nth-child(1){background: url('../images/main/icon_info.png') no-repeat center top;}
+#service ul li:nth-child(2){background: url('../images/main/icon_airplane.png') no-repeat center top;}
+#service ul li:nth-child(3){background: url('../images/main/icon_hotel.png') no-repeat center top;}
+#service ul li:nth-child(4){background: url('../images/main/icon_plan.png') no-repeat center top;}
+#service ul li:hover a{color: #2291CD;}
+
+/*투어패키지*/
+#packages .turkey{float: left; position: relative; }
+#packages .canyon{float: right; position: relative;}
+#packages .play{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 0; background: url('../images/main/play.png') no-repeat center;  width: 110px; height: 110px; transition: all 0.5s;}
+#packages .play:hover{transform: translate(-50%,-50%) scale(1.1,1.1);}
+
+
+
+#packages .box{height: 420px;}
+#packages .inner{text-align: center;}
+#packages .more{display: inline-block; border: 2px solid #999; font-size: 15px; padding: 10px 50px; border-radius: 50px;}
+#packages .more:hover{border: 2px solid #2291CD; color: #2291CD;}
+
+/*푸터배너*/
+#footer_banner{width: 1920px; height: 420px; position: relative;}
+#footer_banner img{width: 100%; }
+#footer_banner .more{display: inline-block; border: 1px solid #999;  color: #666; font-size: 15px; padding: 8px 70px; border-radius: 50px;
+    position: absolute; left: 585px; bottom: 90px; transform: translateX(-50%)}
+#footer_banner .more:hover{border: 1px solid #000; color: #000;}
+
+/*푸터*/
+#footer{height: 230px; background: #eee; color: #3f3f3f;}
+#footer .inner{position: relative;}
+#footer .footer_line{border-bottom: 1px solid #d2d2d2; height: 50px;}
+#footer .company li{float: left;}
+#footer .company li a{display: block; padding: 10px 20px; color: #666;}
+#footer h3 img{position: absolute; left: 0; top: 50px;}
+#footer address{position: absolute; left: 230px; top: 50px;}
+#footer .copy{position: absolute; left: 230px; top: 95px;}
+#footer .sns{position: absolute; right: 50px; top: 50px;}
+#footer .sns li{float: left;}
+#footer .sns li a{display: block; padding-left: 10px;}
+
+/*go top*/
+#gotop { display:none; position:fixed; right:50px; bottom:50px; }

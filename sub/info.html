@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--og(open graph)-->
+    <meta property="og:site_name" content="Globelist">
+    <meta property="og:url" content="https://www.globelist.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="globelist">
+    <meta property="og:description" content="글로브리스트에서 나만의 특별한 여행을 계획해보세요.">
+    <meta property="og:image" content="images/og_image.jpg">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Globelist</title>
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../css/ani.css" type="text/css">
+    <link rel="stylesheet" href="../css/sub.css" type="text/css">
+    <!--js-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="modal">
+            <div class="modal_inner">
+                <input type="text" placeholder="도시, 국가, 키워드로 검색">
+                <button>x</button>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_inner">
+                <h3>Login</h3>
+                <button class="close_login">X</button>
+                <label for="input_id">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_id" type="text"> 
+                <br><br>
+                <label for="input_pw">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pw" type="password"><br>
+                <div class="login_btn"><a href="#">로그인</a></div>
+                <h4>아직 회원이 아니신가요?</h4>
+                <div class="join_btn"><a href="#">Join</a></div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="join_inner">
+                <h3>Join</h3>
+                <button class="close_login">X</button>
+                <label for="input_name">Name&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_name" type="text">
+                <br><br>
+                <label for="input_email">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_email" type="text">
+                <br><br>
+                <label for="input_pnumber">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pnumber" type="password" >
+                <input id="input_join" type="submit" value="회원가입">
+                
+            </div>
+        </div>
+        <header id="header" class="inner">
+            <h1><a href="../index.html">
+                    <img src="../images/common/main_logo.png" alt="Globelist">
+                </a></h1>
+            <div class="sch"><p>Search</p></div>
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="travel.html">여행지</a>
+                        <ul class="submenu">
+                            <li><a href="travel.html">인기 여행지</a></li>
+                            <li><a href="#">인기 루트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="swiss.html">여행계획</a>
+                        <ul class="submenu">
+                            <li><a href="swiss.html">관광 정보</a></li>
+                            <li><a href="#">마이플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reserve.html">예약</a>
+                        <ul class="submenu">
+                            <li><a href="reserve.html">비행기</a></li>
+                            <li><a href="#">숙소</a></li>
+                            <li><a href="#">투어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">입국정보</a>
+                        <ul class="submenu">
+                            <li><a href="info.html">자가격리규정</a></li>
+                            <li><a href="#">여행가능지역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="board.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="board.html">커뮤니티</a></li>
+                            <li><a href="#">자주찾는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <!--header end-->
+        <section id="res_sb">
+            <img src="../images/sub2/info_sb_black.jpg" alt="입국정보">
+        </section>
+
+        <section class="breadcrumbs inner clearfix">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="info.html">입국정보</a></li>
+                <li><a href="info.html">여행가능지역</a></li>
+                
+            </ul>
+        </section>
+
+        <section id="contents" class="inner">
+            
+
+            <ul class="info_menu clearfix">
+                <li class="addon"><a href="#">미주</a></li>
+                <li><a href="info-1.html">유럽</a></li>
+                <li><a href="info-2.html">남태평양</a></li>
+            </ul>
+            <div class="restriction">
+                <h3>입국규정</h3>
+                <p>유효한 비자 / 거주증 / 비자 면제서 / 특별입국 사전승인 서류 소지한 외국인<br>
+                    대한민국 포함 13개 국가에 대해 여권종류, 입국목적에 상관없이 입국일로부터 15일내 체류 가능 
+                    </p>
+                <p>  ※ 대상국 : 대한민국, 일본, 독일, 프랑스, 이탈리아, 스페인, 영국, 러시아, 덴마크, 스웨덴<br>
+                    ※ 무비자 입국시 6개월 이상의 여권 유효기간 및 왕복 항공권 소지 필수</p>
+            </div>
+            <div class="paper">
+                <h4>구비 서류 및 준비사항</h4>
+                <h5>백신 접종 증명서</h5>
+                <p>
+                    <br>
+                    - 적용 대상 : 미국 도착 또는 미국에서 환승하는 모든 외국인<br>
+                    - 적용 예외 : 미국 시민권/영주권 및 이민비자 소유자<br>
+                    * 외국인의 경우 만18세 미만, 의학적 사유로 백신접종 불가 경우, 미군 가족 및 자녀, 외교/공무, 승무원, 선원 (C1/D 비자), 백<br>신 부족 국가 국민 (B1/B2 비자 제외), 입국이 미국 국익에 부합하는 사람 (국무장관, 교통장관, 국토안보부 장관 승인) 한정 예<br>외 적용
+                    
+                    <br>
+                    <br>
+                    - 인정 백신 : FDA 및 WHO 승인 백신 (화이자, 모더나, 얀센, 아스트라제네카, 시노팜/시노백, 코비실드, 노바백스)<br>
+                    * 교차 접종 허용
+                    
+                    <br>
+                    - 접종 완료 기준 : 백신 종류별 횟수 충족하고 접종 완료 후 14일 이상 경과<br>
+                    - 표기 언어 : 영어/한국어 (기타 언어의 경우 항공사 직원의 확인 필요)<br>
+                    - 문서 종류 : 종이 또는 QR코드가 있는 디지털 증명서 또는 정부 기관에서 다운로드한 백신 기록<br>
+                    - 필수 표기 사항 : 성명 / 생년월일 또는 여권번호 / 백신제조사 / 접종 횟수 / 접종 일자 / 백신접종 증명서 발행 출처 등
+                    </p>
+                    <br>
+                    <h5>출발 1일 전 이내 검사한 COVID-19 음성 확인서</h5>
+                    <p>
+                    <br>
+                    - 적용 대상 : 국적 및 백신접종 불문 미국 도착 또는 미국에서 환승하는 전 승객<br>
+                    - 적용 예외 : 만2세 미만, 항공사 승무원, 공무 목적의 미군 및 미국 관료<br>
+                    * 코로나 확진 이력 시, 출발 90일 이내 코로나 회복 관련 서류 소지 (미국 질병통제센터 안내 참고)
+                    
+                    <br>
+                    <br>
+                    
+                    - COVID-19 검사 방법 : Antigen (항원) 검사 또는 PCR (유전자 증폭) 검사<br>
+                    - 표기 언어 : 영어/한국어 (기타 언어의 경우 항공사 직원의 확인 필요)<br>
+                    - 문서 종류 : 종이 또는 전자 사본<br>
+                    - 필수 표기 사항 : 성명 / 생년월일 또는 여권번호 / 검사 방법 / 검사 일자 / 검사 결과 / 검사 기관 등
+                    
+                    </p>
+                    <br>
+                    <h5>미국 질병통제센터 요구 서약서</h5>
+                    <br>
+                    <h5>로스앤젤레스 도착 승객 : Traveler Form 사전 작성 필요</h5>
+                    <br>
+                    
+                   
+            </div>
+            <div class="caution">
+                <h4>유의사항</h4>
+                <ul>
+                    <li>국가별 출입국 제한 사항은 시시각각 변경되며 때로는 충분한 고지 기간 없이 시행되는 경우도 있습니다.
+                    </li>
+                    <li>해당 내용은 코로나19 관련 국가별 출입국 제한 사항에 대한 최소한의 정보 제공이 목적이며, 승객의 출국/입국을 보장하지 않습니다.</li>
+                    <li>보다 자세한 사항은 외교부 여행안전사이트 최신안전소식 새 창에서 열림 또는 각국 재외공관 홈페이지의 공지사항을 참고해 주세요.</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+
+        <footer id="footer">
+            <div class="footer_line">
+                <div class="inner">
+                    <ul class="company">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner">
+            
+            <h3><img src="../images/common/footer_logo.png" alt="Globelist"></h3>
+            
+            <address>부산시 부산진구 중앙대로 708 5층 503호<br>
+            사업자등록번호 : 0515-54820-5458
+            </address>
+            <p class="copy">&copy; COPYRIGHT GLOBELIST Corp. ALL RIGHTS RESERVED.</p>
+            <ul class="sns">
+                <li><a href="#"><img src="../images/common/sns_insta.png" alt="insta"></a></li>
+                <li><a href="#"><img src="../images/common/sns_chat.png" alt="kakaotalk"></a></li>
+                <li><a href="#"><img src="../images/common/sns_mail.png" alt="mail"></a></li>
+            </ul>
+            </div>
+        </footer>
+        <!--footer end-->
+        <a href="#" id="gotop"><img src="../images/common/btn_gotop.png" alt="위로"></a>
+    </div>
+</body>
+</html>

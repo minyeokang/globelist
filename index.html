@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--open graph-->
+    <meta property="og:site_name" content="Globelist">
+    <meta property="og:url" content="https://minyeokang.github.io/globelist/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Globelist">
+    <meta property="og:description" content="글로브리스트에서 나만의 특별한 여행을 계획해보세요.">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Globelist</title>
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/ani.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+
+    <!--js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!--search-->
+        <div class="modal">
+            <div class="modal_inner">
+                <input type="text" placeholder="도시, 국가, 키워드로 검색">
+                <button>x</button>
+
+            </div>
+        </div>
+        <!--login-->
+        <div class="login">
+            <div class="login_inner">
+                <h3>Login</h3>
+                <button class="close_login">X</button>
+                <label for="input_id">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_id" type="text">
+                <br><br>
+                <label for="input_pw">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pw" type="password"><br>
+                <div class="login_btn"><a href="#">로그인</a></div>
+                <h4>아직 회원이 아니신가요?</h4>
+                <div class="join_btn"><a href="#">Join</a></div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="join_inner">
+                <h3>Join</h3>
+                <button class="close_login">X</button>
+                <label for="input_name">Name&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_name" type="text">
+                <br><br>
+                <label for="input_email">Email&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_email" type="text">
+                <br><br>
+                <label for="input_pnumber">Password&nbsp; :&nbsp;&nbsp;</label>
+                <input id="input_pnumber" type="password">
+                <input id="input_join" type="submit" value="회원가입">
+
+            </div>
+        </div>
+
+        <header id="header" class="inner clearfix">
+            <h1><a href="#">
+                    <img src="images/common/main_logo.png" alt="Globelist">
+                </a></h1>
+            <div class="sch">
+                <p>Search</p>
+            </div>
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="sub/mypage.html">마이페이지</a></li>
+            </ul>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="sub/travel.html">여행지</a>
+                        <ul class="submenu">
+                            <li><a href="sub/travel.html">인기 여행지</a></li>
+                            <li><a href="#">인기 루트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub/swiss.html">여행계획</a>
+                        <ul class="submenu">
+                            <li><a href="sub/swiss.html">관광 정보</a></li>
+                            <li><a href="#">마이플래너</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub/reserve.html">예약</a>
+                        <ul class="submenu">
+                            <li><a href="sub/reserve.html">비행기</a></li>
+                            <li><a href="#">숙소</a></li>
+                            <li><a href="#">투어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub/info.html">입국정보</a>
+                        <ul class="submenu">
+                            <li><a href="sub/info.html">자가격리규정</a></li>
+                            <li><a href="#">여행가능지역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub/board.html">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="sub/board.html">커뮤니티</a></li>
+                            <li><a href="sub/board.html">자주찾는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <!--header end-->
+
+        <section id="mb">
+            <ul class="banner">
+                <li class="mb1">
+                    <img src="images/main/swiss.jpg" alt="스위스">
+                </li>
+                <li class="mb2">
+                    <img src="images/main/croatia.jpg" alt="크로아티아">
+                </li>
+                <li class="mb3">
+                    <img src="images/main/island.jpg" alt="아일랜드">
+                </li>
+            </ul>
+        </section>
+        <!--mb end-->
+
+        <section id="planner">
+            <div class="inner clearfix">
+                <img src="images/main/planner.jpg" alt="플래너사진">
+                <div class="plantxt">
+                    <h2>나만의 여행 플래너</h2>
+                    <p>여행일자, 숙소, 가고 싶은 장소만 선택해서<br>담으면 되는 편리한 일정 관리 서비스</p>
+                    <ul>
+                        <li>여행지 선택</li>
+                        <li>일정 선택</li>
+                        <li>동선 계획</li>
+                        <li>일정 생성</li>
+                    </ul>
+
+                    <a href="#" class="more">지금 작성하기</a>
+
+                </div>
+
+            </div>
+        </section>
+        <!--planner end-->
+        <div id="contents">
+            <p class="sub_title">Recommendations</p>
+            <h3>추천 여행지</h3>
+            <section id="city" class="inner clearfix">
+
+
+                <div class="city_1">
+                    <ul class="europe">
+                        <li>
+                            <img src="images/main/europe_italy.jpg" alt="이탈리아">
+                        </li>
+                        <li>
+                            <img src="images/main/europe_paris.jpg" alt="파리">
+                        </li>
+                        <li>
+                            <img src="images/main/europe_swiss.jpg" alt="스위스">
+                        </li>
+                    </ul>
+                    <div class="text">
+                        <h3><a href="#">유럽</a></h3>
+                        <p><a href="#">이탈리아, 파리, 스위스</a></p>
+                    </div>
+                </div>
+                <div class="city_2">
+                    <ul class="america">
+                        <li>
+                            <img src="images/main/na_newyork.jpg" alt="뉴욕">
+                        </li>
+                        <li>
+                            <img src="images/main/na_canyon.jpg" alt="캐년">
+                        </li>
+                        <li>
+                            <img src="images/main/na_sanfran.jpg" alt="샌프란시스코">
+                        </li>
+                    </ul>
+                    <div class="text">
+                        <h3><a href="#">북미</a></h3>
+                        <p><a href="#">뉴욕, 그랜드캐년, 샌프란시스코</a></p>
+                    </div>
+
+                </div>
+                <div class="city_3">
+                    <ul class="pacific">
+                        <li>
+                            <img src="images/main/sp_nz.jpg" alt="호주">
+                        </li>
+                        <li>
+                            <img src="images/main/sp_nz2.jpg" alt="뉴질랜드">
+                        </li>
+                        <li>
+                            <img src="images/main/sp_nz3.jpg" alt="사이판">
+                        </li>
+
+                    </ul>
+                    <div class="text">
+                        <h3><a href="#">남태평양</a></h3>
+                        <p><a href="#">호주, 뉴질랜드, 사이판</a></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--city end-->
+
+            <section id="service" class="inner clearfix">
+                <p class="sub_title">Optimized service</p>
+                <h3>편리한 일체형 서비스</h3>
+                <ul>
+                    <li class="ani_stop ani-start-fadeUp"><a href="sub/info.html">입국정보확인</a></li>
+                    <li class="ani_stop ani-start-fadeUp ani-delay-04"><a href="sub/reserve.html">항공권예약</a></li>
+                    <li class="ani_stop ani-start-fadeUp ani-delay-07"><a href="#">숙소예약</a></li>
+                    <li class="ani_stop ani-start-fadeUp ani-delay-10"><a href="#">일정관리</a></li>
+                </ul>
+            </section>
+            <!--service end-->
+
+            <section id="packages" class="clearfix">
+                <p class="sub_title">Tour packages</p>
+                <h3>여행 패키지</h3>
+                <div class="inner">
+                    <div class="box ">
+                        <div class="turkey ani_stop ani-start-fadeUp">
+                            <img src="images/main/activity1.jpg" alt="터키">
+                            <a href="#" class="play">play</a>
+                        </div>
+                        <div class="canyon ani_stop ani-start-fadeUp">
+                            <img src="images/main/activity2.jpg" alt="캐년">
+                            <a href="#" class="play">play</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class=more>투어 상품보기</a>
+
+                </div>
+
+            </section>
+            <!--packages end-->
+
+        </div>
+        <!--contents end-->
+
+        <section id="footer_banner">
+            <a href="#">
+                <img src="images/main/footer.jpg" alt="해외여행 인증 이벤트"></a>
+            <a href="#" class="more">자세히 보기</a>
+        </section>
+        <!--footer_banner end-->
+
+        <footer id="footer">
+            <div class="footer_line">
+                <div class="inner">
+                    <ul class="company">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner">
+
+                <h3><a href="#"><img src="images/common/footer_logo.png" alt="Globelist"></a></h3>
+
+                <address>부산시 부산진구 중앙대로 708 5층 503호<br>
+                    사업자등록번호 : 0515-54820-5458
+                </address>
+                <p class="copy">&copy; COPYRIGHT GLOBELIST Corp. ALL RIGHTS RESERVED.</p>
+                <ul class="sns">
+                    <li><a href="#"><img src="images/common/sns_insta.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="images/common/sns_chat.png" alt="kakaotalk"></a></li>
+                    <li><a href="#"><img src="images/common/sns_mail.png" alt="mail"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!--footer end-->
+        <a href="#" id="gotop"><img src="images/common/btn_gotop.png" alt="위로"></a>
+    </div>
+    <!--wrap end-->
+</body>
+
+</html>
